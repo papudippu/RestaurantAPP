@@ -5,6 +5,7 @@ node ( "master"){
    stage ("checkout"){
    echo " checking out"
    checkout scm
+   sh "pwd"
    }
    stage ("Build UI"){
    echo "Build UI"
