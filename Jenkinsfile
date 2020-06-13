@@ -9,7 +9,7 @@ node ( "master"){
    }
    stage ("Build UI"){
    echo "Build UI"
-   docker build -t "ngins_docker_build_image:v1.0" -f Dockerfile 
+   sh "docker build -t 'ngins_docker_build_image:v1.0' -f Dockerfile "
       
    }
    stage ("Deploy Dev") {
