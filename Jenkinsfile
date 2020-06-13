@@ -3,7 +3,8 @@ def tomcat_home="/opt/app/home"
 
 node ( "master"){
    stage ("checkout"){
-   echo " cheking out"
+   echo " checking out"
+   checkout scm
    }
    stage ("Build UI"){
    echo "Build UI"
